@@ -21,9 +21,35 @@ $contents = "json.txt";
 
 $current = json_encode($school, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);  
 
-echo $current;
+// echo $current;
 
 file_put_contents($contents, $current);
+
+
+foreach ($school as $key => $valarr) {
+    echo "<b>$key</b><br>";
+    foreach ($valarr as $value) {
+        echo "<li>$value</li>";
+    }
+}
+
+
+
+foreach ($school as $key => $valarr) {
+    echo "<b>$key</b><br>";
+    for ($i=0; $i<count($valarr); $i++) {
+        if ($i = $valarr[3]){
+            echo $valarr[3];
+        }
+        else{
+            echo "error";
+        }
+    }
+}
+
+   
+
+
 
 ?>
 <header>

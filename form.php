@@ -190,18 +190,18 @@
 // $name = $_POST["msg"];
 // echo htmlspecialchars ("Привет $name, сегодня $time, спасибо");
 
-session_start();
+// session_start();
 
-$sName = $_POST['username']; // введенные пользователем данные передаются методом post, записываем их в переменную
+// $sName = $_POST['username']; // введенные пользователем данные передаются методом post, записываем их в переменную
 
-$_SESSION['username'] = $sName; //передаем это имя в сессию, ключ - произвольный
+// $_SESSION['username'] = $sName; //передаем это имя в сессию, ключ - произвольный
 
-if(isset($_SESSION['username'])){ // если у нас есть че в сессии, то выводим это
-    $hi = 'Привет, ' . $_SESSION['username'];
-    print_r($hi);
-}
-if(empty($_SESSION['username'])){ //если нет, то не судьба
-    echo "пусто";
-}
+// if(isset($_SESSION['username'])){ // если у нас есть че в сессии, то выводим это
+//     $hi = 'Привет, ' . $_SESSION['username'];
+//     print_r($hi);
+// }
+// if(empty($_SESSION['username'])){ //если нет, то не судьба
+//     echo "пусто";
+// }
 
 ?>

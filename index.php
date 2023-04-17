@@ -947,23 +947,23 @@
 // Ключевое слово self
 // методы с маркером static работают быстрее в два раза
 
-class Page{
-	static $main = 'content<br>';
+// class Page{
+// 	static $main = 'content<br>';
 
-	public static function header(){
-		return 'header<br>';
-	}
-	public static function footer(){
-		return 'footer<br>';
-	}
+// 	public static function header(){
+// 		return 'header<br>';
+// 	}
+// 	public static function footer(){
+// 		return 'footer<br>';
+// 	}
 
-	public static function getPage(){
-		echo 	self::header() .
-				self::$main .
-				self::footer();
-	}
-}
-Page::getPage();
+// 	public static function getPage(){
+// 		echo 	self::header() .
+// 				self::$main .
+// 				self::footer();
+// 	}
+// }
+// Page::getPage();
 
 // this относится к текущему обьекту
 // self относится к текущему класс
